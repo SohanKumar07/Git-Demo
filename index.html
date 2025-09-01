@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sohan Singh - Portfolio</title>
+    <link rel="stylesheet" href="style..css">
+</head>
+<body>
+    <!-- Header Controls -->
+    <div class="header-controls">
+        <button class="login-btn" onclick="openLoginModal()">Login</button>
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+    </div>
+
+    <div class="vertical-line"></div>
+    
+    <!-- Profile Section -->
+    <div class="profile-section">
+        <div class="profile"></div>
+        <div class="profile-info">
+            <h2>Sohan Singh</h2>
+            <p>Full Stack Web Developer</p>
+        </div>
+        <button class="follow-btn" onclick="toggleFollow()" id="followBtn">Follow</button>
+    </div>
+
+    <div class="container">
+        <nav class="nav">
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#skills" onclick="showSection('skills')">Skills</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-content">
+            <!-- Home Section -->
+            <div id="home" class="content-section">
+                <div class="hero-section">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>Passionate Full Stack Developer creating innovative web solutions with modern technologies and clean, efficient code.</p>
+                    <button class="cta-button" onclick="showSection('projects')">View My Work</button>
+                </div>
+            </div>
+
+            <!-- About Section -->
+            <div id="about" class="content-section section" style="display: none;">
+                <h2>About Me</h2>
+                <p style="margin-bottom: 20px; line-height: 1.6;">I'm a passionate web developer with expertise in both frontend and backend technologies. I love creating user-friendly applications that solve real-world problems. My journey in web development started with a curiosity about how websites work, and it has evolved into a full-fledged career focused on building scalable, efficient, and beautiful web applications.</p>
+                
+                <p style="margin-bottom: 20px; line-height: 1.6;">When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and sharing my knowledge with the developer community. I believe in continuous learning and staying updated with the latest trends in web development.</p>
+
+                <div style="margin-top: 30px;">
+                    <h3 style="color: var(--accent-color); margin-bottom: 15px;">Experience</h3>
+                    <ul style="list-style: disc; margin-left: 20px; line-height: 1.8;">
+                        <li>3+ years of professional web development experience</li>
+                        <li>Specialized in React.js, Node.js, and modern JavaScript</li>
+                        <li>Experience with database design and management</li>
+                        <li>Strong focus on responsive design and user experience</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div id="skills" class="content-section section" style="display: none;">
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript, React.js, Vue.js, TypeScript</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">Backend</h3>
+                        <p>Node.js, Express.js, Python, PHP, RESTful APIs</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">Database</h3>
+                        <p>MongoDB, MySQL, PostgreSQL, Firebase</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">Tools & Others</h3>
+                        <p>Git, Docker, AWS, Webpack, Sass, Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div id="projects" class="content-section section" style="display: none;">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>E-Commerce Platform</h3>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">A full-stack e-commerce solution with user authentication, payment integration, and admin dashboard. Built with modern technologies for optimal performance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Stripe API</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Task Management App</h3>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Socket.io</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Weather Dashboard</h3>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">A responsive weather application with location-based forecasts, interactive charts, and personalized weather alerts.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">Weather API</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Blog Platform</h3>
+                        <p style="margin-bottom: 15px; line-height: 1.6;">A modern blogging platform with markdown support, comment system, and SEO optimization for content creators.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Prisma</span>
+                            <span class="tech-tag">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div id="contact" class="content-section section" style="display: none;">
+                <h2>Get In Touch</h2>
+                <p style="margin-bottom: 30px; text-align: center; line-height: 1.6;">I'm always interested in hearing about new opportunities and exciting projects. Let's connect!</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">Email</h3>
+                        <p>sohan.dev@email.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">LinkedIn</h3>
+                        <p>linkedin.com/in/sohansingh</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">GitHub</h3>
+                        <p>github.com/sohansingh</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3 style="color: var(--accent-color); margin-bottom: 10px;">Phone</h3>
+                        <p>+91 98765 43210</p>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 40px;">
+                    <button class="cta-button" onclick="alert('Thanks for your interest! Feel free to reach out via email or LinkedIn.')">
+                        Start a Conversation
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Sohan Singh. Built with passion and modern web technologies.</p>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2 style="margin-bottom: 20px; color: var(--accent-color);">Login</h2>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="cta-button" style="width: 100%;">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
