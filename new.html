@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    hello world
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const heroTitle = document.querySelector('.hero-section h1');
+            const originalText = heroTitle.textContent;
+            typeWriter(originalText, heroTitle, 80);
+        });
+        animateOnScroll();
+        loadTheme(); // Uncomment this if you want to persist theme across sessions
+    </script>
+
+    <div> class="hero-section">
+        <h1>Your Hero Title Here</h1>   
+        <p>Your hero description here.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+
 </body>
 </html>
