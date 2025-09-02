@@ -288,3 +288,5 @@ window.addEventListener('load', function() {
     const originalText = heroTitle.textContent;
     typeWriter(originalText, heroTitle, 80);
 });
+animateOnScroll();
+loadTheme(); // Uncomment this if you want to persist theme across sessions
